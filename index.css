@@ -1,18 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Jua&display=swap');
 body{
-    background-color:white;
+    background-color:rgba(252, 195, 249, 0.986);
 }
 
 .btn{
-    cursor:pointer
+    cursor:pointer;
+    border: 0;
+    outline: 0;
 }
 
-h1{
-    color: #c20dc9;
+body{
+    color: #f5f5dc;
     transition: color 0.5s ease-in-out;
+    font-family: 'Jua', cursive;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: -1.2px 0  #7f7dda,
+    0 1.2px  #7f7dda,
+    1.2px 0 #7f7dda,
+    0 -1.2px  #7f7dda;
 }
 
+
+h1{ 
+    font-family: 'Potta One', cursive;
+    color: #f5f5dc;
+    font-size: 100px;
+    text-shadow: -4px 0  #7f7dda,
+    0 4px  #7f7dda,
+    4px 0 #7f7dda,
+    0 -4px  #7f7dda;
+    border: 0;
+    outline: 0;
+}
+
+h5{
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+}
 .cliked {
-    color: #7f8c8d;
+    color: #ade6eb;
 }
 
 .form,
@@ -22,4 +52,23 @@ h1{
 
 .showing{
     display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
 }
